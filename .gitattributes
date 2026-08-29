@@ -1,0 +1,4 @@
+# Store text with LF in the repository and check it out with LF everywhere,
+# so a clone on macOS or Linux is not full of CRLF.
+* text=auto eol=lf
+*.png binary

@@ -1,0 +1,31 @@
+{
+  "name": "sap-mcp-server",
+  "version": "2.0.0",
+  "description": "Read SAP S/4HANA OData data from a local LLM over MCP. Typed tools and response cleaning size the payload for a small model's context window.",
+  "private": true,
+  "type": "module",
+  "main": "server.ts",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "tsx server.ts",
+    "dev": "tsx watch server.ts",
+    "test": "tsx test/unit.ts && node test/smoke.mjs",
+    "typecheck": "tsc --noEmit",
+    "test:unit": "tsx test/unit.ts",
+    "test:smoke": "node test/smoke.mjs",
+    "mcp-config": "node scripts/mcp-config.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "axios": "^1.7.0",
+    "dotenv": "^16.4.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

@@ -1,0 +1,14 @@
+node_modules/
+dist/
+*.log
+
+# Every .env variant is secret. .env.example is the exception: placeholders
+# only, meant to be committed. Keep it that way — anything written into it
+# ships to everyone who clones this.
+.env
+.env.*
+!.env.example
+
+# Editor and assistant scratch files.
+.vscode/
+.idea/
