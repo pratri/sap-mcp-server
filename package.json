@@ -2,6 +2,12 @@
   "name": "sap-mcp-server",
   "version": "2.0.0",
   "description": "Read SAP S/4HANA OData data from a local LLM over MCP. Typed tools and response cleaning size the payload for a small model's context window.",
+  "author": "Pranav Tripuraneni",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pratri/sap-mcp-server.git"
+  },
   "private": true,
   "type": "module",
   "main": "server.ts",
